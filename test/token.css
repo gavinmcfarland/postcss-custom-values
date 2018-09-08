@@ -1,0 +1,7 @@
+@value <number>gu {
+	value: calc($0 * 4px);
+};
+
+.example {
+	margin: 10gu 10px 20gu;
+}

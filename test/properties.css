@@ -1,0 +1,21 @@
+@value smaller property(padding, margin) {
+	value: 16px;
+};
+
+@value small property(padding, margin) {
+	value: 24px;
+};
+
+@value medium property(padding, margin) {
+	value: 48px;
+};
+
+@value small property(font-size) {
+	value: 12px;
+};
+
+.example {
+	font-size: small;
+	padding: small medium;
+	margin: small smaller;
+}

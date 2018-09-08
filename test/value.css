@@ -1,0 +1,21 @@
+@value smaller {
+	value: 16px;
+};
+
+@value small {
+	value: 24px;
+};
+
+@value medium {
+	value: 48px;
+};
+
+@value small {
+	value: 12px;
+};
+
+.example {
+	font-size: small;
+	padding: small medium;
+	margin: small smaller;
+}

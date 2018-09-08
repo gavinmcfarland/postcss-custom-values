@@ -1,0 +1,56 @@
+{
+  "name": "postcss-custom-values",
+  "version": "0.0.1",
+  "description": "",
+  "author": "Gavin McFarland <gavin@mindthetic.com>",
+  "license": "CC0-1.0",
+  "repository": "mindthetic/postcss-custom-values",
+  "homepage": "https://github.com/mindthetic/postcss-custom-values#readme",
+  "bugs": "https://github.com/mindthetic/postcss-custom-values/issues",
+  "main": "index.cjs.js",
+  "module": "index.es.mjs",
+  "files": [
+    "index.cjs.js",
+    "index.es.mjs"
+  ],
+  "scripts": {
+    "prepublishOnly": "npm test",
+    "pretest": "rollup -c .rollup.js --silent",
+    "test": "echo 'Running tests...'; npm run test:js && npm run test:tape",
+    "test:ec": "echint --ignore index.*.js test",
+    "test:js": "eslint *.js --cache --ignore-path .gitignore --quiet",
+    "test:tape": "postcss-tape"
+  },
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "dependencies": {
+    "postcss": "^7.0.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0",
+    "@babel/plugin-syntax-dynamic-import": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "babel-eslint": "^9.0.0",
+    "eslint": "^5.5.0",
+    "eslint-config-dev": "^2.0.0",
+    "postcss-tape": "^2.2.0",
+    "pre-commit": "^1.2.2",
+    "rollup": "^0.65.2",
+    "rollup-plugin-babel": "^4.0.1"
+  },
+  "eslintConfig": {
+    "extends": "dev",
+    "parser": "babel-eslint"
+  },
+  "keywords": [
+    "postcss",
+    "css",
+    "postcss-plugin",
+    "values",
+    "keywords",
+    "units",
+    "custom",
+    "tokens"
+  ]
+}
