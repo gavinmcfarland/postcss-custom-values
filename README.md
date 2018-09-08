@@ -10,31 +10,31 @@ With [PostCSS Custom Values] you can create your own CSS values such as keywords
 
 ```css
 @value long {
-	value: 500px;
+  value: 500px;
 };
 
 @value small property(padding, margin) {
-	value: 20px;
+  value: 20px;
 };
 
 @value medium property(padding, margin) {
-	value: 40px;
+  value: 40px;
 };
 
 @value small property(font-size) {
-	value: 12px;
+  value: 12px;
 };
 
 @value <number>gu {
-	value: calc($0 * 4px);
+  value: calc($0 * 4px);
 };
 
 .example {
   position: absolute;
   top: long;
   width: long;
-	font-size: small;
-	padding: small medium;
+  font-size: small;
+  padding: small medium;
   margin: 5gu 10px 10gu 1em;
 }
 ```
@@ -45,8 +45,8 @@ Output:
   position: absolute;
   top: 500px;
   width: 500px;
-	font-size: 12px;
-	padding: 20px 40px;
+  font-size: 12px;
+  padding: 20px 40px;
   margin: calc(5 * 4px) 10px calc(10 * 4px) 1em;
 }
 ```
