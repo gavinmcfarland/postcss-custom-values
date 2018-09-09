@@ -73,7 +73,7 @@ Below are a list of the currently available tokens.
 |-------------|----------------------------------------------------------|
 | `<number>`  | Any number including decimal points and negative numbers |
 | `<integer>` | Only whole numbers including negative integers           |
-| `<side>`    | top, right, bottom or top                                |
+| `<side>`    | top, right, bottom or left                               |
 
 
 ## Setup
