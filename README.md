@@ -67,7 +67,7 @@ Data is captured by the token and can be used to calculate the value by referenc
 }
 ```
 
-Below are a list of the current available tokens.
+Below are a list of the currently available tokens.
 
 | Key         | Description                                              |
 |-------------|----------------------------------------------------------|
