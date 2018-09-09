@@ -8,7 +8,7 @@ _This is a work in progress and not recommended for production_
 
 With [PostCSS Custom Values] you can create your own CSS values such as keywords and units.
 
-```css
+```pcss
 /* Create a keyword which can be used with any property */
 @value long {
   value: 500px;
@@ -53,7 +53,7 @@ Output:
 
 Tokens can be placed anywhere within the value identifier.
 
-```css
+```pcss
 @value layout_<side> {...}
 @value <number>gu {...}
 @value _<integer>_ {...}
@@ -61,7 +61,7 @@ Tokens can be placed anywhere within the value identifier.
 
 Data is captured by the token and can be used to calculate the value by referencing it using `$0`.
 
-```css
+```pcss
 @value space_<integer> {
   value: calc($0 * 10px);
 }
