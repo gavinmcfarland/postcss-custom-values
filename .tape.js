@@ -8,6 +8,6 @@ module.exports = {
 		},
 		'token': {
 			message: 'supports tokens'
-		},
+		}
 	}
 };

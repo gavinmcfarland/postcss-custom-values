@@ -47,8 +47,7 @@ function getKeyword(root) {
 	return keywords;
 }
 
-export default postcss.plugin("postcss-custom-value", opts => {
-	console.log("opts", opts);
+export default postcss.plugin("postcss-custom-value", () => {
 
 	return root => {
 		// console.log("root, result", root, result);
@@ -56,7 +55,7 @@ export default postcss.plugin("postcss-custom-value", opts => {
 
 		// For each keyword definition
 		for (let i = 0; i < keywords.length; i++) {
-			let keyword = keywords[i]
+			let keyword = keywords[i];
 
 			// For each declration with matching properties
 			root.walkDecls(keyword.props, decl => {
@@ -70,6 +69,7 @@ export default postcss.plugin("postcss-custom-value", opts => {
 					for (let b = 0; b < array1.length; b++) {
 						if (array1[b].match(keyword.name)) {
 							array1[b] = keyword.value.replace(dollarIdent, array1[b].match(keyword.name)[1]);
+
 						}
 
 					}
