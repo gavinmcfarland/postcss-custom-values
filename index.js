@@ -1,8 +1,6 @@
 import postcss from "postcss";
 import {tokenRegex} from "./lib/tokenRegex";
 
-var dollarIdent = "$0";
-
 function getKeyword(root) {
 	let keywords = [];
 
@@ -68,7 +66,13 @@ export default postcss.plugin("postcss-custom-value", () => {
 					var array1 = postcss.list.space(decl.value);
 					for (let b = 0; b < array1.length; b++) {
 						if (array1[b].match(keyword.name)) {
-							array1[b] = keyword.value.replace(dollarIdent, array1[b].match(keyword.name)[1]);
+							if (keyword.value.match(/\$0/gi)) {
+								array1[b] = keyword.value.replace(/\$0/gi, array1[b].match(keyword.name)[1]);
+							}
+							else {
+								array1[b] = array1[b].replace(keyword.name, keyword.value);
+							}
+
 
 						}
 

@@ -14,8 +14,13 @@
 	value: 12px;
 };
 
+@value CORNFLOWER_BLUE {
+	value: #1472EF;
+};
+
 .example {
 	font-size: small;
 	padding: small medium;
 	margin: small smaller;
+	background-color: color-mod(CORNFLOWER_BLUE a(10%));
 }
