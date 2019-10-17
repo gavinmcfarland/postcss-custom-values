@@ -82,8 +82,8 @@ Below are a list of the currently available tokens.
 npm install postcss-custom-values --save-dev
 ```
 
-[cli-img]: https://img.shields.io/travis/mindthetic/postcss-custom-values.svg
-[cli-url]: https://travis-ci.org/mindthetic/postcss-custom-values
+[cli-img]: https://img.shields.io/travis/limitlessloop/postcss-custom-values.svg
+[cli-url]: https://travis-ci.org/limitlessloop/postcss-custom-values
 [git-img]: https://img.shields.io/badge/support-chat-blue.svg
 [git-url]: https://gitter.im/postcss/postcss
 [npm-img]: https://img.shields.io/npm/v/postcss-custom-values.svg
